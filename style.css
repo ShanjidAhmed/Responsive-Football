@@ -16,7 +16,6 @@ body{
 
 .header-element{
     display: flex;
-    flex-direction: row;
 }
 
 .header-text{
@@ -49,6 +48,10 @@ body{
     height: 438px;
     padding-left: 102px;
     padding-top: 153px;
+}
+.header-image:hover img{
+    width: 700px;
+    height: 500px;
 }
 .fa-arrow-right{
     align-items: center;
@@ -173,6 +176,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    column-gap: 10px;
     
 }
 footer img{
@@ -191,4 +195,23 @@ footer p{
 .icon li{
     padding: 10px;
     color: #6C6C6C;
+}
+
+/* Media Quiries */
+@media only screen and (max-width: 688px)) {
+    .header-start{
+        width: 1440px;
+        height: 100%;
+    }
+    .header-element{
+        background-color: brown;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .player{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    
 }
